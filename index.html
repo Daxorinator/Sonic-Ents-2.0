@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="X-Frame-Options" content="allow">
+    <meta content="allow">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Sonic Ents">
@@ -60,26 +60,28 @@
       </div>
     </header>
 
-    <!-- Services Section -->
+  <!-- Services Section -->
+  <div class="container-fluid">
     <section id="about" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Services</h2>
-              <p>Total event production & management</p>
-              <p>Mobile DJ Hire</p>
-              <p>A3/A4 Poster Design & Printing</p>
-              <p>Special Effects Hire: CO2 Cannons, Fire Breathers, Stilt Walkers</p>
-              <p>Cloud based POS Systems</p>
-              <p>Social Media & On-Street Promotion</p>
-              <p>Sound & Lighting Engineers</p>
-              <p>Sound & Lighting Equipment Hire</p>
-              <p>Consultation & Advice</p>
-              <p>PSA Licensed Security (Doors and Static)</p>
-          </div>
+      <h2>Services</h2>
+      <div class="row">
+        <div class="col-sm-6 mx-auto">
+          <p>Total event production & management</p>
+          <p>Mobile DJ Hire</p>
+          <p>A3/A4 Poster Design & Printing</p>
+          <p>Special Effects Hire: CO2 Cannons, Fire Breathers, Stilt Walkers</p>
+          <p>Cloud based POS Systems</p>
+        </div>
+        <div class="col-sm-6 mx-auto">
+          <p>Social Media & On-Street Promotion</p>
+          <p>Sound & Lighting Engineers</p>
+          <p>Sound & Lighting Equipment Hire</p>
+          <p>Consultation & Advice</p>
+          <p>PSA Licensed Security (Doors and Static)</p>
         </div>
       </div>
     </section>
+  </div>
 
     <!-- Ticket Sales Section -->
     <section id="tickets" class="download-section content-section text-center">
@@ -87,12 +89,17 @@
         <div class="col-lg-8 mx-auto">
           <h2>Buying tickets?</h2>
           <p>You can order your tickets online, using your PayPal account or Credit Card.</p>
-          <div style="width:100%; text-align:left;">
-            <iframe src="https://eventbrite.ie/tickets-external?eid=42286713699&ref=etckt" frameborder="0" height="275" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-            <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;">
-              <a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none" target="_blank" href="https://www.eventbrite.ie/">Powered by Eventbrite</a>
-            </div>
-          </div>
+          <div id="embedTS_FLKMG" style="width:100%;"></div>
+          <script type="text/javascript">
+            (function() {
+              var el = document.createElement("script");
+              el.type = "text/javascript";
+              el.async = true;
+              el.src = "https://www.ticketsource.eu/ticketshop/FLKMG";
+              var s = document.getElementsByTagName("script")[0];
+              s.parentNode.insertBefore(el, s);
+            })();
+          </script>
         </div>
       </div>
     </section>
