@@ -162,7 +162,7 @@
 								
 										// EDIT THE 2 LINES BELOW AS REQUIRED
 										$email_to = "daxorinator@gmail.com";
-										$email_subject = "Sonic-Ents:" $_POST['subject'];
+										$email_subject = "Sonic-Ents: Message from a user";
 								
 										function died($error) {
 												// your error code can go here
@@ -232,10 +232,10 @@
 										$email_message .= "Message: ".clean_string($message)."\n";
 								
 								// create email headers
-								$headers = 'From: '.$email_from."\r\n".
-								'Reply-To: '.$email_from."\r\n" .
+								$headers = 'From: '.$email."\r\n".
+								'Reply-To: '.$email."\r\n" .
 								'X-Mailer: PHP/' . phpversion();
-								@mail($email_to, $email_subject, $email_message, $headers);?>
+								mail($email_to, $email_subject, $email_message, $headers); };?>
 						</ul>
 					</div>
 				</div>
